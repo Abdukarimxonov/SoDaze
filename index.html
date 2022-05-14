@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Sodaze | Dailiness</title>
+   <!-- styles -->
+   <style>
+      @font-face {
+         font-family: "Druk Cyr";
+         src: url("../fonts/DrukCyr-Medium.ttf") format("truetype");
+         font-weight: 500;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: "Druk Cyr";
+         src: url("../fonts/DrukCyr-Bold.ttf") format("truetype");
+         font-weight: 700;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: "Stolzl";
+         src: url("../fonts/Stolzl-Light.ttf") format("truetype");
+         font-weight: 300;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: "Stolzl";
+         src: url("../fonts/Stolzl-Regular.ttf") format("truetype");
+         font-weight: 400;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: "Stolzl";
+         src: url("../fonts/Stolzl-Medium.ttf") format("truetype");
+         font-weight: 500;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: "Stolzl";
+         src: url("../fonts/Stolzl-Bold.ttf") format("truetype");
+         font-weight: 700;
+         font-style: normal;
+         font-display: swap;
+      }
+   </style>
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.css" />
+
+   <!-- styles end -->
+   <!-- Link Swiper's CSS -->
+
+</head>
+
+<body>
+   <!-- root -->
+   <div id="root">
+      <div class="music-button">
+         <button class="music-button__content">
+            <span class="music-button__item"></span>
+            <span class="music-button__item"></span>
+            <span class="music-button__item"></span>
+            <span class="music-button__item"></span>
+            <span class="music-button__item"></span>
+            <span class="music-button__item"></span>
+         </button>
+      </div>
+      <div class="main-screen">
+         <div class="container">
+            <div class="main-screen__inner">
+               <div class="main-screen__text-box">
+                  <img src="img/logo.png" alt="logo" width="81" height="85" class="logo main-screen__logo">
+                  <p class="main-screen__info-text">Курс - выдох</p>
+                  <div class="video-text main-screen__video-text">
+                     <div class="video-text__inner">
+                        <video src="video/video.mov" class="video-text__video" autoplay loop muted playsinline
+                           poster="img/poster.png"></video>
+                        <div class="video-text__text">Dailiness</div>
+                     </div>
+                  </div>
+                  <p class="main-screen__info-text">Курс - созерцание</p>
+                  <p class="main-screen__text">
+                     Курс о том, как вдохновляюще снимать повседневность на камеру или телефон&nbsp;</p>
+                  <div class="main-screen__icons">
+                     <img src="img/phone.svg" alt="phone" width="16" height="27" class="main-screen__icon">
+                     <img src="img/camera.svg" alt="camera" width="29" height="23" class="main-screen__icon">
+                  </div>
+               </div>
+               <div class="main-screen__video-box">
+                  <video src="video/video.mov" class="main-screen__video" autoplay loop muted playsinline
+                     poster="img/poster.png"></video>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content">
+         <div class="container">
+            <div class="content__inner">
+               <div class="content__heading-box">
+                  <div class="heading content__heading">Содержание курса</div>
+                  <div class="content-text">
+                     Dailiness можно проходить с любым набором
+                  </div>
+                  <ul class="content__list">
+                     <li class="content__list-li">
+                        <p>Только телефон</p>
+                        <div><img width="16px" height="27px" src="img/phone.svg" alt=""> </div>
+                     </li>
+                     <li class="content__list-li">
+                        <p>Телефон и компьютер</p>
+                        <div><img width="16px" height="27px" src="img/phone.svg" alt=""> <span>+</span>
+                           <img src="img/pc.svg" alt="">
+                        </div>
+                     </li>
+                     <li class="content__list-li">
+                        <p> Камера и компьютер </p>
+                        <div><img src="img/camera.svg" alt=""> <span>+</span><img src="img/pc.svg" alt=""></div>
+                     </li>
+                  </ul>
+                  <button class="button content__button" data-modal-for="modal1">Купить за 35$</button>
+               </div>
+               <div class="content__list-box">
+                  <div class="content__list-item">
+                     <p>Уроки о том, как снимать, с какими настройками, какая оптика бывает для
+                        камеры и телефона</p>
+                  </div>
+                  <div class="content__list-item">
+                     <p>14 практических заданий</p>
+                     <p>Учимся соединить кадр и наше чувственное переживание этого кадра. Важно
+                        перекинуть мостик между
+                        глазом и чувством, чтобы кадр был не только красивым, но и тактильным, эмоциональным.</p>
+                  </div>
+                  <div class="content__list-item">
+                     <p>Мобильный монтаж в разных приложениях. Профессиональный монтаж и цветокоррекция в программе
+                        Premiere pro
+                     </p>
+                  </div>
+                  <div class="content__list-item">
+                     <p>Выпускная работа, в которой учимся связывать все эпизоды в одну
+                        эмоциональную и ритмичную
+                        историю.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="diary">
+         <div class="container">
+            <div class="diary__inner">
+               <div class="diary__img-box">
+                  <img src="img/book.png" alt="book mockup" width="457" height="545" class="diary__img">
+               </div>
+               <div class="diary__text-box">
+                  <div class="heading diary__heading">
+                     Дневник
+                  </div>
+                  <p class="diary__text">
+                     В это путешествие ты отправишься с дневником, который поможет понять из чего складывается каждый
+                     твой
+                     день. Рабочий день и день отдыха. Дневник поможет найти вдохновение на сьемку в тех ежедневных
+                     вещах,
+                     которые вас окружают и немножко лучше узнать себя.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="author">
+         <div class="container">
+            <div class="author__inner">
+               <div class="author__about">
+                  <div class="author__about-text">
+                     <p class="text-400-16">5 лет назад сняла свой первый ролик на iPhone, не имея профильного
+                        образования и навыков</p>
+                  </div>
+                  <div class="author__photo">
+                     <img src="img/author/author.png" alt="author">
+                  </div>
+               </div>
+               <div class="author__text-block">
+                  <p class="author__sub-title">Автор курса</p>
+                  <div class="heading author__heading"> <span class="name">Алина</span> <br> <span
+                        class="surname">Головлева</span> </div>
+                  <p class="author__text text-400-16">Обладатель золотой премии Sanckable Content Awards</p>
+                  <p class="author__text text-400-16">Cоздатель единственной в Украине студии коммерческой stop motion
+                     анимации So
+                     Daze</p>
+                  <p class="author__text text-400-16">Сейчас сотрудничает с Golden Globes Awards, Adobe, Nutella, Pepsi,
+                     Cosmopolitan, Tefal и другими мировыми брендами</p>
+               </div>
+               <div class="author__partners-wrapper">
+                  <ul class="author__partners">
+                     <li class="partner__logo"><img src="img/author/partners/1.png" alt=""></li>
+                     <li class="partner__logo"><img src="img/author/partners/2.png" alt=""></li>
+                     <li class="partner__logo"><img src="img/author/partners/3.png" alt=""></li>
+                     <li class="partner__logo"><img src="img/author/partners/4.png" alt=""></li>
+                     <li class="partner__logo"><img src="img/author/partners/5.png" alt=""></li>
+                     <li class="partner__logo"><img src="img/author/partners/6.png" alt=""></li>
+                  </ul>
+               </div>
+               <div class="author__instagram">
+                  <a href="https://www.instagram.com/">
+                     <img src="img/author/insta.svg" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="works">
+         <div class="container">
+            <div class="works__inner">
+               <div class="works__heading heading">Работы учеников</div>
+               <div class="works-swiper__controllers swiper__controllers">
+                  <div class="swiper__controllers-container">
+
+                     <div class="work-swiper-button-prev">
+                        <img src="img/works/left.svg" alt="">
+                     </div>
+                     <div class="work-swiper-button-next">
+                        <img src="img/works/right.svg" alt="">
+                     </div>
+                  </div>
+
+               </div>
+               <div class="swiper workSwiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide"><video autoplay poster="img/works/1.png" loop muted
+                           src="video/1.mov"></video>
+                     </div>
+                     <div class="swiper-slide"><video autoplay poster="img/works/2.png" loop muted
+                           src="video/2.mov"></video></div>
+                     <div class="swiper-slide"><video autoplay poster="img/works/3.png" loop muted
+                           src="video/3.mov"></video></div>
+                     <div class="swiper-slide"><video autoplay loop muted src="video/4.mov"></video></div>
+                     <div class="swiper-slide"><video autoplay loop muted src="video/5.mov"></video></div>
+                     <div class="swiper-slide"><video autoplay loop muted src="video/6.mov"></video></div>
+                     <div class="swiper-slide"><video autoplay loop muted src="video/7.mov"></video></div>
+                     <div class="swiper-slide"><video autoplay loop muted src="video/8.mov"></video></div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="reviews">
+         <div class="container">
+            <div class="reviews__inner">
+               <div class="reviews__heading heading">
+                  <span>Отзывы</span>
+               </div>
+
+               <div class="swiper reviewsSwiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide reviews-slide">
+                        <div class="reviews-slide-prev">
+                           <img src="img/reviews/slider/Mockups/min5.png" alt="">
+                           <p class="review-author">Ivanna Ryabokon</p>
+                           <p class="review__date">17/09/2021</p>
+                        </div>
+                        <div class="revievs-slide__reviev"><img src="img/reviews/slider/Mockups/1.png" alt=""></div>
+
+                        <div class="reviews-slide-this">
+                           <img src="img/reviews/slider/Mockups/min1.png" alt="">
+                           <p class="review-author">Ka Va</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="reviews-slide-next">
+                           <img src="img/reviews/slider/Mockups/min2.png" alt="">
+                           <p class="review-author">Nafisa</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide reviews-slide">
+                        <div class="reviews-slide-prev">
+                           <img src="img/reviews/slider/Mockups/min1.png" alt="">
+                           <p class="review-author">Ka Va</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="revievs-slide__reviev"><img src="img/reviews/slider/Mockups/2.png" alt=""></div>
+                        <div class="reviews-slide-this">
+                           <img src="img/reviews/slider/Mockups/min2.png" alt="">
+                           <p class="review-author">Nafisa</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="reviews-slide-next">
+                           <img src="img/reviews/slider/Mockups/min4.png" alt="">
+                           <p class="review-author">Antoninka</p>
+                           <p class="review__date">17/09/2021</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide reviews-slide">
+                        <div class="reviews-slide-prev">
+                           <img src="img/reviews/slider/Mockups/min2.png" alt="">
+                           <p class="review-author">Nafisa</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="revievs-slide__reviev"><img src="img/reviews/slider/Mockups/4.png" alt=""></div>
+                        <div class="reviews-slide-this">
+                           <img src="img/reviews/slider/Mockups/min4.png" alt="">
+                           <p class="review-author">Antoninka</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="reviews-slide-next">
+                           <!--Тут надо указать картинку--> <img src="img/reviews/slider/Mockups/min2.png" alt="">
+                           <p class="review-author">Darya Meshkova</p>
+                           <p class="review__date">17/09/2021</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide reviews-slide">
+                        <div class="reviews-slide-prev">
+                           <img src="img/reviews/slider/Mockups/min4.png" alt="">
+                           <p class="review-author">Yulia Uryanskaya</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="revievs-slide__reviev"><img src="img/reviews/slider/Mockups/6.png" alt=""></div>
+                        <div class="reviews-slide-this">
+                           <!--Тут надо заменит фотку --><img src="img/reviews/slider/Mockups/min2.png" alt="">
+                           <p class="review-author">Darya Meshkova</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="reviews-slide-next">
+                           <img src="img/reviews/slider/Mockups/min5.png" alt="">
+                           <p class="review-author">Ivanna Ryabokon</p>
+                           <p class="review__date">17/09/2021</p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide reviews-slide">
+                        <div class="reviews-slide-prev">
+                           <!--Тут надо указать картинку--> <img src="img/reviews/slider/Mockups/min2.png" alt="">
+                           <p class="review-author">Darya Meshkova</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="revievs-slide__reviev"><img src="img/reviews/slider/Mockups/5.png" alt=""></div>
+                        <div class="reviews-slide-this">
+                           <img src="img/reviews/slider/Mockups/min5.png" alt="">
+                           <p class="review-author">Ivanna Ryabokon</p>
+                           <p class="review__date">18/09/2021</p>
+                        </div>
+                        <div class="reviews-slide-next">
+                           <img src="img/reviews/slider/Mockups/min1.png" alt="">
+                           <p class="review-author">Ka Va</p>
+                           <p class="review__date">17/09/2021</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="reviewsSwiper__controllers swiper__controllers">
+                     <div class="swiper__controllers-container reviewsSwiper__controllers-container">
+
+                        <div class="reviewsSwiper-button-prev swiper-button-prev">
+                           <img src="img/works/left.svg" alt="">Предыдущий отзыв
+                        </div>
+                        <div class="reviewsSwiper-button-next swiper-button-next">
+                           Следующий отзыв<img src="img/works/right.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="go">
+         <div class="container">
+            <div class="go__inner">
+               <div class="go__top">
+                  <p class="go__top-text">- Вдох...</p>
+                  <p class="go__top-text">- Выдох...</p>
+               </div>
+               <div class="go__heading">Поехали?</div>
+               <p class="go__text">Старт</p>
+               <div class="go__subheading">сразу после оплаты<br></div>
+               <button class="button go__button" data-modal-for="modal1">Купить за 35$</button>
+            </div>
+         </div>
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+         var swiper = new Swiper(".workSwiper", {
+            navigation: {
+               nextEl: ".work-swiper-button-next",
+               prevEl: ".work-swiper-button-prev",
+            },
+            breakpoints: {
+               320: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 30,
+               },
+               375: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 40,
+               },
+               768: {
+                  slidesPerView: 2.3,
+                  spaceBetween: 50,
+               },
+               1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 92,
+               }
+            },
+            grabCursor: true,
+            autoHeight: false,
+         });
+         var reviewSwiper = new Swiper(".reviewsSwiper", {
+            navigation: {
+               nextEl: ".reviewsSwiper-button-next",
+               prevEl: ".reviewsSwiper-button-prev",
+            },
+            grabCursor: true,
+            loop: true,
+            breakpoints: {
+               320: {
+                  slidesPerView: 1,
+               },
+            },
+         });
+      </script>
+   </div>
+   <!-- root end -->
+   <div class="modal-form" data-modal="modal1">
+
+      <div class="modal-form__bg"></div>
+      <div class="modal-form__content-box">
+         <div class="modal-form__close-button dailiness_close_btn">
+            <div class="modal-form__close-button-inner">
+               <div class="modal-form__close-button-item"></div>
+               <div class="modal-form__close-button-item"></div>
+            </div>
+         </div>
+
+         <div class="modal-form__heading">ЗАПОЛНИ ФОРМУ РЕГИСТРАЦИИ</div>
+
+         <img src="img/form-decor.png" alt="decor" width="110" height="110" class="modal-form__decor">
+         <form action="#" method="POST" class="form modal-form__form" id="dailiness_form">
+
+            <script id="55cb70475824ca422fc09dedbf132c6ecb893904"
+               src="https://stopmotion.getcourse.ru/pl/lite/widget/script?id=449195"></script>
+
+
+         </form>
+      </div>
+   </div>
+   <!-- scripts -->
+
+   <script src="js/lazy-item.js" async></script>
+   <script src="js/main.js" async></script>
+   <!-- scripts end -->
+</body>
+
+</html>
